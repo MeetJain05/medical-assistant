@@ -1,11 +1,5 @@
 # 📅 AI Medical Assistant Chatbot — RAG-based Application
 
-![Medical Assistant Thumbnail](./assets/medicalAssistant.png)
-
-> 🎥 **Watch the full project walkthrough:** [YouTube Video](https://youtu.be/BOhKnkrr4Yc)
->
-> 🗂️ **Architecture PDF:** [View Architecture](./assets/MedicalAssistant.pdf)
-
 ---
 
 ## 🧠 Project Overview
@@ -33,10 +27,6 @@ Retrieved Docs
    ↓
 LLM-generated Answer
 ```
-
-For a detailed view, refer to the **[MedicalAssistant.pdf](./assets/MedicalAssistant.pdf)**
-
----
 
 ## 📚 Features
 
@@ -78,10 +68,7 @@ POST /ask/ --- Ask a question --- Form field: `question`
 ```
 └── 📁assets
     ├── DIABETES.pdf
-    ├── MedicalAssistant.pdf
-    └── medicalAssistant.png
 ```
-
 ```
 └── 📁client
     └── 📁__pycache__
@@ -130,7 +117,6 @@ POST /ask/ --- Ask a question --- Form field: `question`
         ├── upload_pdfs.py
     └── 📁uploaded_docs
         ├── DIABETES.pdf
-        ├── Supratim Nag - LOR.pdf
     ├── .env
     ├── logger.py
     ├── main.py
@@ -144,7 +130,7 @@ POST /ask/ --- Ask a question --- Form field: `question`
 
 ```bash
 # Clone the repo
-$ git clone https://github.com/snsupratim/medicalAssistant.git
+$ git clone https://github.com/MeetJain05/medical-assistant
 $ cd medicalAssistant/server
 
 # Create virtual env
@@ -181,20 +167,6 @@ $ streamlit run app.py
 ## 🌐 Deployment
 
 - Hosted on [Render](https://render.com)
-- Configure `start command` as:
-
-  ```bash
-  uvicorn main:app --host 0.0.0.0 --port 10000
-  ```
-
----
-
-## 🌟 Credits
-
-- Built by Supratim Nag
-- Inspired by LangChain, Groq, Pinecone, and FastAPI ecosystems
-
----
 
 ## 🎉 License
 
